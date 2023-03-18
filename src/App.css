@@ -1,8 +1,8 @@
 video {
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 100vw;
-    object-fit: fill;
+    object-fit: cover;
     z-index: -2;
 }
 
@@ -13,7 +13,7 @@ video {
 
 .nav {
     width: 100%;
-    height: 100px;
+    height: 6rem;
     background-color: #c2c2c25e;
     mix-blend-mode: hard-light;
     display: flex;
@@ -29,28 +29,32 @@ video {
 }
 
 .inputDiv {
-    width: 30rem;
+    width: 30em;
+}
+
+
+form {
+    display: flex;
+    align-items: center;
+    border: thin solid #3e3e3e72;
+    width: 100%;
 }
 
 label {
     width: 80%;
 }
 
-form {
-    display: flex;
-    align-items: center;
-}
-
 input {
     background-color: #00000000;
     mix-blend-mode: hard-light;
-    border-style: groove;
+    border: hidden;
     padding: 5px;
     padding-left: 20px;
-    width: 100%;
     font-size: 1.6rem;
     font-weight: 700;
     color: black;
+    width: 100%;
+
 }
 
 input::placeholder {
@@ -58,14 +62,16 @@ input::placeholder {
     font-weight: 400;
 }
 
-.btn {
-    width: 20%;
+.bttn {
+    background-color: #00000000;
+    mix-blend-mode: hard-light;
+    font-size: 1.2rem;
     font-weight: 500;
-    border: solid;
-    border-width: thin;
-    border-radius: 0px;
-    padding: 12px 14px;
+    width: 100%;
+    border-block: none;
+    border-right-color: #00000000;
     color: black;
+    width: 20%;
 }
 
 .clock {
@@ -103,8 +109,154 @@ input::placeholder {
     align-items: center;
 }
 
+
+.Wimage {
+    width: 25rem;
+}
+
 .wImg {
     width: 4.5rem;
     height: 4.5rem;
     padding: 10px;
+}
+
+@media only screen and (max-width: 1010px) {
+    .weatherApp {
+        font-size: 2rem;
+    }
+
+    .inputDiv {
+        width: 20rem;
+    }
+
+    .clock h1 {
+        font-size: 1.5rem;
+    }
+
+    .clock h4 {
+        font-size: 1.2rem;
+    }
+
+    .Wimage {
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .weatherApp {
+        font-size: 1.2rem;
+    }
+
+    .inputDiv {
+        width: 15rem;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    .bttn {
+        font-size: 0.8rem;
+    }
+
+    .clock h1 {
+        font-size: 1.2rem;
+    }
+
+    .clock h4 {
+        font-size: 1rem;
+    }
+
+    .Wimage {
+        width: 15rem;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .weatherApp {
+        font-size: 1.5rem;
+        padding: 10px 110px;
+        margin: 0px;
+    }
+
+    .inputDiv {
+        width: 12rem;
+    }
+
+    input {
+        font-size: 0.8rem;
+    }
+
+    .bttn {
+        font-size: 0.7rem;
+    }
+
+    .clock h1 {
+        font-size: 1rem;
+    }
+
+    .clock h4 {
+        font-size: 0.8rem;
+    }
+
+    .Wimage {
+        width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .nav {
+        height: 8rem;
+    }
+
+    .weatherApp {
+        font-size: 1.2rem;
+        padding: 10px 60px;
+    }
+
+    .inputDiv {
+        width: 13rem;
+    }
+
+    input {
+        font-size: 0.8rem;
+        padding-left: 10px;
+        width: 7rem;
+    }
+
+    .bttn {
+        font-size: 0.6rem;
+    }
+
+    .clock {
+        padding: 10px 90px;
+    }
+
+    .clock h1 {
+        font-size: 0.8rem;
+    }
+
+    .clock h4 {
+        font-size: 0.7rem;
+    }
+
+    .Wimage {
+        width: 10rem;
+    }
+
+    .temp {
+        font-size: 2rem;
+    }
+
+    .tempData h4 {
+        font-size: 1rem;
+    }
+
+    .wImg {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
 }

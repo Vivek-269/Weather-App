@@ -42,9 +42,9 @@ function App() {
         <div className='inputDiv'>
           <form onSubmit={handleSubmit}>
             <label>
-              <input type="text" placeholder='Enter the city name:' value={city} onChange={handleChange} />
+              <input type="text" placeholder='Enter the city :' value={city} onChange={handleChange} />
             </label>
-            <button className='btn' type="submit">Search</button>
+            <button className='bttn' type="submit">Search</button>
           </form>
         </div>
         <div><Clock /></div>
@@ -62,7 +62,7 @@ function App() {
                 <h4>Atmosphere: {weather.description}</h4>
               </div>
             </div>
-          ) : <img src="https://cdn-icons-png.flaticon.com/512/3845/3845731.png" alt="img" width='400px' />}
+          ) : <img src="https://cdn-icons-png.flaticon.com/512/3845/3845731.png" alt="img" className='Wimage' />}
         </div>
       </div>
     </div>
